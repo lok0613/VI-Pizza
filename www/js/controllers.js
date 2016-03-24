@@ -1,34 +1,29 @@
-angular.module('starter.controllers', [])
+angular.module('vi-pizza.controllers', [])
+
+.controller('MainCtrl', function($scope, $rootScope, $ionicPopup) {
+  // I think it's gonna to declare the root scope
+
+
+  $scope.lightbox = function(src) {
+    var myPopup = $ionicPopup.show({
+    template: '<img style="width: 100%" src="'+src+'"/>',
+    scope: $scope,
+    buttons: [
+      { text: 'Cancel', type: 'button-positive' }
+    ]
+  });
+  }
+})
 
 .controller('PizzaCtrl', function($scope, Pizza) {
-  // Pizza.all( function(pizzas) {
-  // });
-  $scope.pizzas = Pizza.all();
+  $scope.counter = Array;
+  $scope.deals = Pizza.all( function (data) {
+    $scope.deals = data.pizzas;
+  });
 })
 
-.controller('DashCtrl', function($scope) {})
-
-.controller('ChatsCtrl', function($scope, Chats) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
-
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
-})
-
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
-
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+.controller('PizzaSetCtrl', function($scope, PizzaSet) {
+  $scope.deals = PizzaSet.all( function (data) {
+    $scope.deals = data.pizzaSets;
+  });
 });

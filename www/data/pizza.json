@@ -1,0 +1,48 @@
+{
+    "pizzas": [{
+        "id": 0,
+        "name": "超級至尊 (香濃茄醬)",
+        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/04.png",
+        "price": 88
+    }, {
+        "id": 1,
+        "name": "烤雞至尊 (香濃茄醬)",
+        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/19.png",
+        "price": 148
+    }, {
+        "id": 2,
+        "name": "素食至尊 (香濃茄醬)",
+        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/26.png",
+        "price": 138
+    }, {
+        "id": 3,
+        "name": "超級至尊 (香濃茄醬)",
+        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/04.png",
+        "price": 88
+    }, {
+        "id": 4,
+        "name": "烤雞至尊 (香濃茄醬)",
+        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/19.png",
+        "price": 148
+    }, {
+        "id": 5,
+        "name": "素食至尊 (香濃茄醬)",
+        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/26.png",
+        "price": 138
+    }, {
+        "id": 6,
+        "name": "超級至尊 (香濃茄醬)",
+        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/04.png",
+        "price": 88
+    }, {
+        "id": 7,
+        "name": "烤雞至尊 (香濃茄醬)",
+        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/19.png",
+        "price": 148
+    }, {
+        "id": 8,
+        "name": "素食至尊 (香濃茄醬)",
+        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/26.png",
+         "price": 138
+   }]
+}

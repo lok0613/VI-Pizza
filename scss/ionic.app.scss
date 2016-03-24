@@ -21,3 +21,16 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+.vi-qty {
+    float: right;
+    // input[type="number"] {
+    //     font-size: 24px;
+    //     width: 30px;
+    //     display: inline-block;
+    // }
+    span {
+        font-size: 24px;
+        color: grey;
+        display: inline-block;
+    }
+}

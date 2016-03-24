@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('vi-pizza', ['ionic', 'vi-pizza.controllers', 'vi-pizza.services', 'vi-pizza.directives'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -33,61 +33,84 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Each state's controller can be found in controllers.js
   $stateProvider
 
+  .state('shoppingCart', {
+    url: '/shoppingCart',
+    views: {
+      'shoppingCartContent': {
+        templateUrl: 'templates/shoppingCart.html'
+      }
+    }
+  })
+
   // setup an abstract state for the tabs directive
-    .state('tab', {
-    url: '/tab',
+    .state('app', {
+    url: '/app',
     abstract: true,
-    templateUrl: 'templates/tabs.html'
+    templateUrl: 'templates/tabs.html',
+    controller: 'MainCtrl'
   })
 
   // Each tab has its own nav history stack:
 
-  .state('tab.set', {
-    url: '/set',
+  .state('app.set', {
+    url: '/pizzaSet',
     views: {
-      'tab-set': {
-        templateUrl: 'templates/set.html'
+      'pizzaSetContent': {
+        templateUrl: 'templates/deals.html',
+        controller: 'PizzaSetCtrl'
       }
     }
   })
 
-  .state('tab.pizza', {
-      url: '/pizza',
-      views: {
-        'tab-pizza': {
-          templateUrl: 'templates/pizza.html',
-          controller: 'PizzaCtrl',
-        }
+  .state('app.pizza', {
+    url: '/pizza',
+    views: {
+      'pizzaContent': {
+        templateUrl: 'templates/deals.html',
+        controller: 'PizzaCtrl'
       }
-    })
-  .state('tab.mainDish', {
+    }
+  })
+
+  .state('app.mainDish', {
     url: '/mainDish',
     views: {
-      'tab-mainDish': {
-        templateUrl: 'templates/mainDish.html'
+      'mainDishContent': {
+        templateUrl: 'templates/deals.html'
       }
     }
   })
 
-  .state('tab.sideDish', {
+  .state('app.sideDish', {
     url: '/sideDish',
     views: {
-      'tab-sideDish': {
-        templateUrl: 'templates/sideDish.html'
+      'sideDishContent': {
+        templateUrl: 'templates/deals.html'
       }
     }
   })
 
-  .state('tab.drinks', {
+  .state('app.drinks', {
     url: '/drinks',
     views: {
-      'tab-drinks': {
-        templateUrl: 'templates/drinks.html'
+      'drinksContent': {
+        templateUrl: 'templates/deals.html'
+      }
+    }
+  })
+
+
+
+  .state('checkout', {
+    url: '/checkout',
+    views: {
+      'tabContent': {
+        templateUrl: 'templates/checkout.html'
       }
     }
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/set');
+  $urlRouterProvider.otherwise('/app/pizza');
 
 });
