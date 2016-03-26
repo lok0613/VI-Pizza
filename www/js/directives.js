@@ -1,11 +1,16 @@
 angular.module('vi-pizza.directives', [])
 
-.directive('deal', function() {
+.directive('qty', function() {
   return {
     restrict: 'E',
-    template: 'deal.html',
+    templateUrl: 'directives/qty.html',
     link: function(scope, element, attribute) {
-        console.log(scope);
+        scope.qtyCounter = Array;
+        // For some reasons integer didn't work
+        // You can try test it in the mock data
+        for (var t=0; t<scope.deals.length; t++) {
+	        scope.deals[t].qty = scope.deals[t].qty.toString();
+	    }
     }
   };
 })

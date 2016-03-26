@@ -9738,7 +9738,13 @@ a.button {
     color: grey;
     display: inline-block; }
 
+.deal-list {
+  padding-top: 55px;
+  padding-bottom: 60px; }
+
 .button-bar {
+  z-index: 99999;
+  position: fixed;
   border-bottom: 1px solid #E0E0E0; }
   .button-bar a {
     padding: 0 !important; }
@@ -9746,3 +9752,13 @@ a.button {
     background-color: white; }
   .button-bar a.active {
     border-bottom: 2px solid #444; }
+
+.grey-content {
+  background-color: #E0E0E0; }
+  .grey-content h1 {
+    color: #FFF;
+    text-align: center; }
+  .grey-content table {
+    width: 100%; }
+    .grey-content table th {
+      text-align: center; }

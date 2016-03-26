@@ -38,7 +38,17 @@ angular.module('vi-pizza', ['ionic', 'vi-pizza.controllers', 'vi-pizza.services'
     views: {
       'viewContent': {
         templateUrl: 'templates/deals.html',
-        controller: 'FoodCtrl'
+        controller: 'MenuCtrl'
+      }
+    }
+  })
+
+  .state('shoppingCart', {
+    url: '/shoppingCart',
+    views: {
+      'viewContent': {
+        templateUrl: 'templates/shoppingCart.html',
+        controller: 'ShoppingCartCtrl'
       }
     }
   })

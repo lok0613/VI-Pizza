@@ -1,0 +1,8 @@
+<div class="vi-qty">
+  <label>
+    <select ng-model="deal.qty">
+        <option ng-repeat="i in qtyCounter(21) track by $index" ng-value="{{$index}}">{{$index}}</option>
+    </select>
+    <span>pcs</span>
+  </label>
+</div>

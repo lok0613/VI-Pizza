@@ -1,10 +1,27 @@
 <ion-view>
   <ion-content class="padding">
-sd
+  	<div class="grey-content">
+  		<h1>Shopping Cart</h1>
+  		<table>
+  			<thead>
+  				<tr class="row">
+	  				<th class="col col-50">Product</th>
+	  				<th class="col col-25">Qty</th>
+	  				<th class="col col-25">Total $</th>
+  				</tr>
+  			</thead>
+  			<tbody>
+  				<tr class="row" ng-repeat="deal in deals">
+  					<td class="col col-50">{{deal.name}}</td>
+  					<td class="col col-25"><qty/></td>
+  					<td class="col col-25">{{deal.qty * deal.price}}</td>
+  				</tr>
+  			</tbody>
+  		</table>
+  	</div>
   </ion-content>
 </ion-view>
 
 <div class="bar bar-footer bar-balanced">
-  <!-- <div class="title">Checkout</div> -->
-  <a class="button button-balanced" href="#/shoppingCart">Shopping Cart</a>
+  <a class="button button-balanced" ng-click="checkout()">Shopping Cart</a>
 </div>
