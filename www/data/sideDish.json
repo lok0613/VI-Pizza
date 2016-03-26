@@ -1,0 +1,58 @@
+{
+    "deals": [
+        {
+            "id": 0,
+            "name": "吞拿魚蕃茄沙律 (輕量裝)",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3738.png",
+            "price": 32
+        },
+        {
+            "id": 1,
+            "name": "酥脆雞棒拼脆薯格",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6900.png",
+            "price": 62
+        },
+        {
+            "id": 2,
+            "name": "辣味雞翼 (8件)",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3752.png",
+            "price": 63
+        },
+        {
+            "id": 3,
+            "name": "吞拿魚蕃茄沙律 (輕量裝)",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3738.png",
+            "price": 32
+        },
+        {
+            "id": 4,
+            "name": "酥脆雞棒拼脆薯格",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6900.png",
+            "price": 62
+        },
+        {
+            "id": 5,
+            "name": "辣味雞翼 (8件)",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3752.png",
+            "price": 63
+        },
+        {
+            "id": 6,
+            "name": "吞拿魚蕃茄沙律 (輕量裝)",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3738.png",
+            "price": 32
+        },
+        {
+            "id": 7,
+            "name": "酥脆雞棒拼脆薯格",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6900.png",
+            "price": 62
+        },
+        {
+            "id": 8,
+            "name": "辣味雞翼 (8件)",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3752.png",
+            "price": 63
+        }
+   ]
+}

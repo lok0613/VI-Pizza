@@ -1,0 +1,58 @@
+{
+    "deals": [
+        {
+            "id": 0,
+            "name": "香蒜肉絲意粉",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4356.png",
+            "price": 59
+        },
+        {
+            "id": 1,
+            "name": "葡汁雞焗飯",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4370.png",
+            "price": 63
+        },
+        {
+            "id": 2,
+            "name": "鮮蝦珍珠帶子焗飯",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6689.png",
+            "price": 69
+        },
+        {
+            "id": 3,
+            "name": "香蒜肉絲意粉",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4356.png",
+            "price": 59
+        },
+        {
+            "id": 4,
+            "name": "葡汁雞焗飯",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4370.png",
+            "price": 63
+        },
+        {
+            "id": 5,
+            "name": "鮮蝦珍珠帶子焗飯",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6689.png",
+            "price": 69
+        },
+        {
+            "id": 6,
+            "name": "香蒜肉絲意粉",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4356.png",
+            "price": 59
+        },
+        {
+            "id": 7,
+            "name": "葡汁雞焗飯",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4370.png",
+            "price": 63
+        },
+        {
+            "id": 8,
+            "name": "鮮蝦珍珠帶子焗飯",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6689.png",
+            "price": 69
+        }
+   ]
+}

@@ -1,0 +1,58 @@
+{
+    "deals": [
+        {
+            "id": 0,
+            "name": "百事可樂 -罐裝",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3761.png",
+            "price": 8
+        },
+        {
+            "id": 1,
+            "name": "七喜 -罐裝",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3763.png",
+            "price": 8
+        },
+        {
+            "id": 2,
+            "name": "嘉士伯 -罐裝",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3770.png",
+            "price": 25
+        },
+        {
+            "id": 3,
+            "name": "百事可樂 -罐裝",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3761.png",
+            "price": 8
+        },
+        {
+            "id": 4,
+            "name": "七喜 -罐裝",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3763.png",
+            "price": 8
+        },
+        {
+            "id": 5,
+            "name": "嘉士伯 -罐裝",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3770.png",
+            "price": 25
+        },
+        {
+            "id": 6,
+            "name": "百事可樂 -罐裝",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3761.png",
+            "price": 8
+        },
+        {
+            "id": 7,
+            "name": "七喜 -罐裝",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3763.png",
+            "price": 8
+        },
+        {
+            "id": 8,
+            "name": "嘉士伯 -罐裝",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3770.png",
+            "price": 25
+        }
+   ]
+}
