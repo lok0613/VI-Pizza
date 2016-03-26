@@ -34,3 +34,16 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
         display: inline-block;
     }
 }
+
+.button-bar {
+    border-bottom: 1px solid #E0E0E0;
+    a {
+        padding: 0 !important;
+    }
+    a, .button.active {
+        background-color: white;
+    }
+    a.active {
+        border-bottom: 2px solid #444;
+    }
+}

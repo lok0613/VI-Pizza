@@ -1,6 +1,13 @@
 <ion-view>
-  <ion-content class="padding">
-    <div class="list">
+  <ion-content>
+  <div class="button-bar">
+    <a class="button" ng-click="show('pizzaSet')" ng-class="{'active': active('pizzaSet')}">Set</a>
+    <a class="button" ng-click="show('pizza')" ng-class="{'active': active('pizza')}">Pizza</a>
+    <a class="button" ng-click="show('mainDish')" ng-class="{'active': active('mainDish')}">Main Dish</a>
+    <a class="button" ng-click="show('sideDish')" ng-class="{'active': active('sideDish')}">Side Dish</a>
+    <a class="button" ng-click="show('drinks')" ng-class="{'active': active('drinks')}">Drinks</a>
+</div>
+    <div class="list padding">
 
         <div class="item item-thumbnail-left" ng-repeat="deal in deals">
           <img ng-src="{{deal.image}}" ng-click="lightbox(deal.image)">
@@ -13,7 +20,7 @@
               <div class="vi-qty">
                   <label>
                     <select>
-                        <option ng-repeat="i in counter(21) track by $index">{{$index}}</option>
+                        <option ng-repeat="i in qtyCounter(21) track by $index">{{$index}}</option>
                     </select>
                     <span>pcs</span>
                   </label>

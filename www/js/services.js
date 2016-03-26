@@ -18,5 +18,21 @@ angular.module('vi-pizza.services', [])
 
 .factory('PizzaSet', function($http) {
   return baseFactory('pizzaSet', $http);
+})
+
+.factory('FoodFactory', function(Pizza, PizzaSet) {
+  var createFood = function(foodType) {
+    switch(foodType) {
+      case 'pizza':
+        return Pizza;
+      case 'pizzaSet':
+        return PizzaSet;
+      default:
+        return 'PizzaHut';
+    }
+  }
+  return {
+    createFood: createFood
+  };
 });
 

@@ -9737,3 +9737,12 @@ a.button {
     font-size: 24px;
     color: grey;
     display: inline-block; }
+
+.button-bar {
+  border-bottom: 1px solid #E0E0E0; }
+  .button-bar a {
+    padding: 0 !important; }
+  .button-bar a, .button-bar .button.active {
+    background-color: white; }
+  .button-bar a.active {
+    border-bottom: 2px solid #444; }

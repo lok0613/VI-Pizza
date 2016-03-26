@@ -33,84 +33,26 @@ angular.module('vi-pizza', ['ionic', 'vi-pizza.controllers', 'vi-pizza.services'
   // Each state's controller can be found in controllers.js
   $stateProvider
 
-  .state('shoppingCart', {
-    url: '/shoppingCart',
+  .state('food', {
+    url: '/menu',
     views: {
-      'shoppingCartContent': {
-        templateUrl: 'templates/shoppingCart.html'
-      }
-    }
-  })
-
-  // setup an abstract state for the tabs directive
-    .state('app', {
-    url: '/app',
-    abstract: true,
-    templateUrl: 'templates/tabs.html',
-    controller: 'MainCtrl'
-  })
-
-  // Each tab has its own nav history stack:
-
-  .state('app.set', {
-    url: '/pizzaSet',
-    views: {
-      'pizzaSetContent': {
+      'viewContent': {
         templateUrl: 'templates/deals.html',
-        controller: 'PizzaSetCtrl'
+        controller: 'FoodCtrl'
       }
     }
   })
-
-  .state('app.pizza', {
-    url: '/pizza',
-    views: {
-      'pizzaContent': {
-        templateUrl: 'templates/deals.html',
-        controller: 'PizzaCtrl'
-      }
-    }
-  })
-
-  .state('app.mainDish', {
-    url: '/mainDish',
-    views: {
-      'mainDishContent': {
-        templateUrl: 'templates/deals.html'
-      }
-    }
-  })
-
-  .state('app.sideDish', {
-    url: '/sideDish',
-    views: {
-      'sideDishContent': {
-        templateUrl: 'templates/deals.html'
-      }
-    }
-  })
-
-  .state('app.drinks', {
-    url: '/drinks',
-    views: {
-      'drinksContent': {
-        templateUrl: 'templates/deals.html'
-      }
-    }
-  })
-
-
 
   .state('checkout', {
     url: '/checkout',
     views: {
-      'tabContent': {
+      'viewContent': {
         templateUrl: 'templates/checkout.html'
       }
     }
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/pizza');
+  $urlRouterProvider.otherwise('/menu');
 
 });

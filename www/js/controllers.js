@@ -15,11 +15,19 @@ angular.module('vi-pizza.controllers', [])
   }
 })
 
-.controller('PizzaCtrl', function($scope, Pizza) {
-  $scope.counter = Array;
-  $scope.deals = Pizza.all( function (data) {
-    $scope.deals = data.pizzas;
-  });
+.controller('FoodCtrl', function($scope, FoodFactory, $ionicHistory) {
+  $scope.qtyCounter = Array;
+  $scope.activeFoodType = '';
+  $scope.show = function(foodType) {
+    $scope.deals = FoodFactory.createFood(foodType).all( function (data) {
+      $scope.deals = data.deals;
+      $scope.activeFoodType = foodType;
+    });
+  };
+  $scope.active = function(foodType) {
+    return $scope.activeFoodType == foodType;
+  };
+  $scope.show('pizza');
 })
 
 .controller('PizzaSetCtrl', function($scope, PizzaSet) {
