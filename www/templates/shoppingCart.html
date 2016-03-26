@@ -1,12 +1,12 @@
 <ion-view>
-  <ion-content class="padding">
+  <ion-content class="padding shopping-cart-content">
   	<div class="grey-content">
   		<h1>Shopping Cart</h1>
   		<table>
   			<thead>
   				<tr class="row">
 	  				<th class="col col-50">Product</th>
-	  				<th class="col col-25">Qty</th>
+	  				<th class="col col-25">Qty (pcs)</th>
 	  				<th class="col col-25">Total $</th>
   				</tr>
   			</thead>
@@ -19,9 +19,14 @@
   			</tbody>
   		</table>
   	</div>
+  	<div class="summary" ng-show="deals.length > 0">
+		<div class="total-amount">
+			Total: ${{total()}}
+		</div>
+	</div>
   </ion-content>
 </ion-view>
 
-<div class="bar bar-footer bar-balanced">
-  <a class="button button-balanced" ng-click="checkout()">Shopping Cart</a>
+<div class="bar bar-footer">
+  <div class="title" ng-click="checkout()">Checkout</div>
 </div>

@@ -9760,5 +9760,14 @@ a.button {
     text-align: center; }
   .grey-content table {
     width: 100%; }
-    .grey-content table th {
+    .grey-content table th, .grey-content table td {
       text-align: center; }
+  .grey-content .vi-qty span {
+    display: none; }
+
+.shopping-cart-content .total-amount {
+  float: right;
+  background-color: #E0E0E0;
+  margin-top: 20px;
+  font-size: 32px;
+  padding: 20px; }

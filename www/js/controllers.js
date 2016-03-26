@@ -1,6 +1,6 @@
 angular.module('vi-pizza.controllers', [])
 
-.controller('MenuCtrl', function($scope, FoodFactory, $ionicPopup, $state) {
+.controller('MenuCtrl', function($scope, FoodFactory, $ionicPopup, $state, $rootScope) {
   /**
    * State the current food type
    * @var string
@@ -64,25 +64,16 @@ angular.module('vi-pizza.controllers', [])
 
   /**
    * Goto shopping cart
+   * @use $rootScope.cartDeals
    */
   $scope.shoppingCart = function() {
-    var chosenDeals = [];
-    // mock deals
-  //   chosenDeals = [{
-  //       "id": 0,
-  //       "name": "百事可樂 -罐裝",
-  //       "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3761.png",
-  //       "price": 8
-  //   },
-  //   {
-  //       "id": 1,
-  //       "name": "七喜 -罐裝",
-  //       "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3763.png",
-  //       "price": 8
-  //   }
-  // ];
-    // for ($scope.deals.)
-    $state.go('shoppingCart', chosenDeals);
+    $rootScope.cartDeals = [];
+    for (var t=0; t<$scope.deals.length; t++) {
+      if ($scope.deals[t].qty > 0) {
+        $rootScope.cartDeals.push($scope.deals[t]);
+      }
+    }
+    $state.go('shoppingCart');
   };
 
   /**
@@ -99,7 +90,6 @@ angular.module('vi-pizza.controllers', [])
     var titles = document.getElementsByClassName('title');
     var height = titles[titles.length-1].offsetHeight;
     document.getElementsByClassName('button-bar')[0].style.top = height + "px";
-    console.log(height)
   };
 
   /**
@@ -110,8 +100,20 @@ angular.module('vi-pizza.controllers', [])
   $scope.fixCss();
 })
 
-.controller('ShoppingCartCtrl', function($scope) {
-  console.log('s')
+.controller('ShoppingCartCtrl', function($scope, $rootScope, $state) {
+  $scope.deals = $rootScope.cartDeals;
+
+  $scope.total = function () {
+    var amount = 0;
+    for (var t=0; t<$scope.deals.length; t++) {
+      amount += $scope.deals[t].qty * $scope.deals[t].price;
+    }
+    return amount;
+  }
+
+  $scope.checkout =function () {
+    $state.go('checkout');
+  }
 })
 
 ;
