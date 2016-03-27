@@ -57,7 +57,8 @@ angular.module('vi-pizza', ['ionic', 'vi-pizza.controllers', 'vi-pizza.services'
     url: '/checkout',
     views: {
       'viewContent': {
-        templateUrl: 'templates/checkout.html'
+        templateUrl: 'templates/checkout.html',
+        controller: 'CheckoutCtrl'
       }
     }
   });

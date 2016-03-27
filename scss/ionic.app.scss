@@ -35,7 +35,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     padding-bottom: 60px;
 }
 
-.button-bar {
+.vi-menu.button-bar {
     z-index: 99999;
     position: fixed;
     border-bottom: 1px solid #E0E0E0;
@@ -62,11 +62,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
             text-align: center;
         }
     }
-    .vi-qty {
-        span {
-            display: none;
-        }
-    }
 }
 
 .shopping-cart-content {
@@ -77,4 +72,43 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
         font-size: 32px;
         padding: 20px;
     }
+    .vi-qty {
+        span {
+            display: none;
+        }
+    }
 }
+
+.checkout-content {
+    .list:nth-child(1) {
+        padding-top: 0;
+    }
+    h1 {
+        text-align: center;
+    }
+    .row {
+        .col-33 {
+            text-align: center;
+        }
+         h2 {
+            font-size: 32px;
+        }
+    }
+    .vi-qty {
+        margin-top: 14px;
+        span {
+            font-size: 14px;
+        }
+    }
+    textarea {
+        height: 80px;
+    }
+}
+
+// .shopping-cart-content, .checkout-content {
+//     .vi-qty {
+//         span {
+//             display: none;
+//         }
+//     }
+// }

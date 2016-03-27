@@ -1,0 +1,44 @@
+<ion-view>
+  <ion-content class="checkout-content">
+    <h1>Check Out</h1>
+    <div class="list padding deal-list">
+        <div class="item item-thumbnail-left" ng-repeat="deal in deals" ng-show="visible(deal)">
+          <img ng-src="{{deal.image}}" ng-click="lightbox(deal.image)">
+          <h2>{{deal.name}}</h2>
+          <div class="row">
+            <div class="col col-33">
+              <h2>${{deal.price}}</h2>
+            </div>
+            <div class="col col-33">
+              <qty/>
+            </div>
+            <div class="col col-33">
+              <h2>${{deal.qty * deal.price}}</h2>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- <label>Address:</label> -->
+    <!-- <textarea ng-model="userForm.address"></textarea> -->
+    <div class="list list-inset">
+      <label class="item item-input">
+        <textarea ng-model="userForm.address" placeholder="Address"></textarea>
+      </label>
+      <label class="item item-input">
+        <input type="text" ng-model="userForm.name" placeholder="Name">
+      </label>
+      <label class="item item-input">
+        <input type="number" ng-model="userForm.phone"placeholder="Phone No.">
+      </label>
+    </div>
+  </ion-content>
+</ion-view>
+
+<div class="bar bar-footer bar-balanced">
+  <div class="button-bar">
+    <a class="button button-balanced" ng-click="goBack()">Back to Cart</a>
+    <a class="button button-balanced" ng-click="confirm()">Confirm</a>
+  </div>
+</div>
+

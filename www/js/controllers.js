@@ -63,23 +63,33 @@ angular.module('vi-pizza.controllers', [])
   };
 
   /**
-   * Goto shopping cart
+   * Put deals into cart
    * @use $rootScope.cartDeals
    */
-  $scope.shoppingCart = function() {
+  $scope.getCartDeals = function() {
     $rootScope.cartDeals = [];
     for (var t=0; t<$scope.deals.length; t++) {
       if ($scope.deals[t].qty > 0) {
         $rootScope.cartDeals.push($scope.deals[t]);
       }
     }
+  };
+
+  /**
+   * Goto shopping cart
+   * @use $scope.getCartDeals()
+   */
+  $scope.shoppingCart = function() {
+    $scope.getCartDeals();
     $state.go('shoppingCart');
   };
 
   /**
    * Checkout deals
+   * @use $scope.getCartDeals()
    */
   $scope.checkout = function() {
+    $scope.getCartDeals();
     $state.go('checkout');
   };
 
@@ -114,6 +124,21 @@ angular.module('vi-pizza.controllers', [])
   $scope.checkout =function () {
     $state.go('checkout');
   }
+})
+
+.controller('CheckoutCtrl', function($scope, $rootScope, $state) {
+  $scope.deals = $rootScope.cartDeals;
+  console.log($scope.deals)
+
+  /**
+   * Forcing all deals have to visible in checkout
+   * @param Deal deal
+   * @param Boolean
+   */
+  $scope.visible = function(deal) {
+    return true;
+  };
+
 })
 
 ;
