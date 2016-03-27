@@ -1,10 +1,10 @@
 <ion-view>
-  <div class="button-bar vi-menu">
-      <a class="button" ng-click="show('pizzaSet')" ng-class="{'active': active('pizzaSet')}">Set</a>
-      <a class="button" ng-click="show('pizza')" ng-class="{'active': active('pizza')}">Pizza</a>
-      <a class="button" ng-click="show('mainDish')" ng-class="{'active': active('mainDish')}">Main Dish</a>
-      <a class="button" ng-click="show('sideDish')" ng-class="{'active': active('sideDish')}">Side Dish</a>
-      <a class="button" ng-click="show('drinks')" ng-class="{'active': active('drinks')}">Drinks</a>
+  <div class="button-bar vi-menu row">
+      <a class="button col col-15" ng-click="show('pizzaSet')" ng-class="{'active': active('pizzaSet')}"><span>Set</span></a>
+      <a class="button col col-15" ng-click="show('pizza')" ng-class="{'active': active('pizza')}"><span>Pizza</span></a>
+      <a class="button col col-27" ng-click="show('mainDish')" ng-class="{'active': active('mainDish')}"><span>Main Dish</span> </a>
+      <a class="button col col-27" ng-click="show('sideDish')" ng-class="{'active': active('sideDish')}"><span>Side Dish</span></a>
+      <a class="button col col-15" ng-click="show('drinks')" ng-class="{'active': active('drinks')}"><span>Drinks</span></a>
   </div>
   <ion-content>
   
@@ -18,6 +18,11 @@
             </div>
             <div class="col col-50">
               <vi-qty/>
+            </div>
+          </div>
+          <div class="row show-desc">
+            <div class="col col-100">
+              More+
             </div>
           </div>
         </div>

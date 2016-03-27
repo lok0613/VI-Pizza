@@ -1,8 +1,11 @@
 # Installation
 ```bash
-sudo npm install -g
-ionic state reset
-bower install
+$ sudo npm install -g ionic cordova gulp
+$ sudo npm install -g
+$ sudo npm install
+$ ionic state reset
+$ ionic setup sass
+$ bower install
 ```
 
 # Reference

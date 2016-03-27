@@ -21,32 +21,63 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+.col-15 {
+    max-width: 15%;
+}
+
+.col-27 {
+    max-width: 27.5%;
+}
+
+.col-27:nth-child(2) {
+
+}
+
 .vi-qty {
     float: right;
     span {
-        font-size: 24px;
+        font-size: 19px;
         color: grey;
         display: inline-block;
     }
 }
 
 .deal-list {
-    padding-top: 55px;
+    padding-top: 62px;
     padding-bottom: 60px;
+    .row, .col-100 {
+        padding: 0;
+    }
+    .show-desc {
+        text-align: right;
+        color: $positive;
+        font-size: 15px;
+    }
+    .item {
+        padding-bottom: 0;
+    }
 }
 
 .vi-menu.button-bar {
     z-index: 99999;
     position: fixed;
     border-bottom: 1px solid #E0E0E0;
-    a {
+    padding: 0;
+    a.button {
         padding: 0 !important;
+        text-overflow: initial;
     }
     a, .button.active {
         background-color: white;
     }
-    a.active {
-        border-bottom: 2px solid #444;
+    a.button span {
+        padding: 5px;
+        border-radius: 5px;
+    }
+    a.button.active span {
+        // border-bottom: 2px solid #000;
+        background-color: $positive;
+        color: #fff;
     }
 }
 
