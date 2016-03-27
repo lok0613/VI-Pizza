@@ -3,46 +3,55 @@
         "id": 0,
         "name": "超級至尊 (香濃茄醬)",
         "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/04.png",
-        "price": 88
+        "price": 148,
+        "info": "意式香腸、火腿、辣肉腸、五香肉粒、牛肉粒、蘑菇、洋蔥、青椒、菠蘿、黑橄欖、香濃茄醬"
     }, {
         "id": 1,
         "name": "烤雞至尊 (香濃茄醬)",
         "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/19.png",
-        "price": 148
+        "price": 132,
+        "info": "烤雞、蘑菇、紅椒、菠蘿、香濃茄醬"
     }, {
         "id": 2,
         "name": "素食至尊 (香濃茄醬)",
         "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/26.png",
-        "price": 138
+        "price": 138,
+        "info": "車厘茄、日本小青瓜、蘑菇、菠蘿、粟米、黑橄欖、香濃茄醬"
     }, {
         "id": 3,
-        "name": "超級至尊 (香濃茄醬)",
-        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/04.png",
-        "price": 88
+        "name": "錦繡至尊 (香濃茄醬)",
+        "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/25.png",
+        "price": 132,
+        "info": "雞肉、煙肉、火腿、意式香腸、五香肉粒、牛肉粒、辣肉腸、香濃茄醬"
     }, {
         "id": 4,
-        "name": "烤雞至尊 (香濃茄醬)",
-        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/19.png",
-        "price": 148
+        "name": "至尊 (香濃茄醬)",
+        "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/01.png",
+        "price": 148,
+        "info": "牛肉粒、五香肉粒、青椒、蘑菇、辣肉腸、洋蔥、香濃茄醬"
     }, {
         "id": 5,
-        "name": "素食至尊 (香濃茄醬)",
-        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/26.png",
-        "price": 138
+        "name": "超級夏威夷 (香濃茄醬)",
+        "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/40.png",
+        "price": 129,
+        "info": "辣肉腸、火腿、牛肉粒、菠蘿、香濃茄醬"
     }, {
         "id": 6,
-        "name": "超級至尊 (香濃茄醬)",
-        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/04.png",
-        "price": 88
+        "name": "火腿芝士 (香濃茄醬)",
+        "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/06.png",
+        "price": 104,
+        "info": "火腿、芝士、香濃茄醬"
     }, {
         "id": 7,
-        "name": "烤雞至尊 (香濃茄醬)",
-        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/19.png",
-        "price": 148
+        "name": "千島海鮮 (千島醬)",
+        "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/14.png",
+        "price": 148,
+        "info": "精選海鮮、吞拿魚、蟹柳、菠蘿、青椒、紅椒、千島醬"
     }, {
         "id": 8,
-        "name": "素食至尊 (香濃茄醬)",
-        "image": "http://order2.pizzahut.com.hk/menu/v000001/hk/tc/images/26.png",
-         "price": 138
+        "name": "海陸精選 (千島醬)",
+        "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/18.png",
+         "price": 129,
+        "info": "牛肉粒、蟹柳、粟米、蘑菇、辣肉腸、千島醬"
    }]
 }
