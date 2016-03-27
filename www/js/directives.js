@@ -1,6 +1,6 @@
 angular.module('vi-pizza.directives', [])
 
-.directive('qty', function() {
+.directive('viQty', function() {
   return {
     restrict: 'E',
     templateUrl: 'directives/qty.html',
@@ -11,6 +11,15 @@ angular.module('vi-pizza.directives', [])
         for (var t=0; t<scope.deals.length; t++) {
 	        scope.deals[t].qty = scope.deals[t].qty.toString();
 	    }
+    }
+  };
+})
+
+.directive('viSummary', function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'directives/summary.html',
+    link: function(scope, element, attribute) {
     }
   };
 })

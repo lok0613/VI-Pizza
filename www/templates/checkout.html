@@ -7,20 +7,20 @@
           <h2>{{deal.name}}</h2>
           <div class="row">
             <div class="col col-33">
-              <h2>${{deal.price}}</h2>
+              ${{deal.price}}
             </div>
             <div class="col col-33">
-              <qty/>
+              {{deal.qty}} pcs
             </div>
             <div class="col col-33">
-              <h2>${{deal.qty * deal.price}}</h2>
+              ${{deal.qty * deal.price}}
             </div>
           </div>
         </div>
     </div>
 
-    <!-- <label>Address:</label> -->
-    <!-- <textarea ng-model="userForm.address"></textarea> -->
+    <vi-summary></vi-summary>
+
     <div class="list list-inset">
       <label class="item item-input">
         <textarea ng-model="userForm.address" placeholder="Address"></textarea>

@@ -126,7 +126,7 @@ angular.module('vi-pizza.controllers', [])
   }
 })
 
-.controller('CheckoutCtrl', function($scope, $rootScope, $state) {
+.controller('CheckoutCtrl', function($scope, $rootScope, $state, $ionicHistory) {
   $scope.deals = $rootScope.cartDeals;
   console.log($scope.deals)
 
@@ -138,6 +138,22 @@ angular.module('vi-pizza.controllers', [])
   $scope.visible = function(deal) {
     return true;
   };
+
+  /**
+   * Total amount of deals
+   * @use $rootScope.totalAmount(Deal[])
+   * @return int
+   */
+  $scope.total = function() {
+    return $rootScope.totalAmount($scope.deals);
+  };
+
+  /**
+   * Go back
+   */
+  $scope.goBack = function() {
+    $ionicHistory.goBack();
+  }
 
 })
 

@@ -9763,27 +9763,23 @@ a.button {
     .grey-content table th, .grey-content table td {
       text-align: center; }
 
-.shopping-cart-content .total-amount {
-  float: right;
-  background-color: #E0E0E0;
-  margin-top: 20px;
-  font-size: 32px;
-  padding: 20px; }
-
 .shopping-cart-content .vi-qty span {
   display: none; }
 
-.checkout-content .list:nth-child(1) {
-  padding-top: 0; }
+.checkout-content .deal-list.list {
+  padding-top: 0;
+  padding-bottom: 0; }
 
 .checkout-content h1 {
   text-align: center; }
 
-.checkout-content .row .col-33 {
-  text-align: center; }
-
-.checkout-content .row h2 {
-  font-size: 32px; }
+.checkout-content .row {
+  margin-top: 10px; }
+  .checkout-content .row .col-33 {
+    text-align: left;
+    font-size: 20px; }
+  .checkout-content .row h2 {
+    font-size: 28px; }
 
 .checkout-content .vi-qty {
   margin-top: 14px; }
@@ -9792,3 +9788,10 @@ a.button {
 
 .checkout-content textarea {
   height: 80px; }
+
+.vi-total-amount {
+  float: right;
+  background-color: #E0E0E0;
+  margin-top: 20px;
+  font-size: 32px;
+  padding: 20px; }

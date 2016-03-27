@@ -65,13 +65,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 .shopping-cart-content {
-    .total-amount {
-        float: right;
-        background-color: #E0E0E0;
-        margin-top: 20px;
-        font-size: 32px;
-        padding: 20px;
-    }
     .vi-qty {
         span {
             display: none;
@@ -80,18 +73,21 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 .checkout-content {
-    .list:nth-child(1) {
+    .deal-list.list {
         padding-top: 0;
+        padding-bottom: 0;
     }
     h1 {
         text-align: center;
     }
     .row {
+        margin-top: 10px;
         .col-33 {
-            text-align: center;
+            text-align: left;
+            font-size: 20px;
         }
          h2 {
-            font-size: 32px;
+            font-size: 28px;
         }
     }
     .vi-qty {
@@ -103,6 +99,14 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     textarea {
         height: 80px;
     }
+}
+
+.vi-total-amount {
+    float: right;
+    background-color: #E0E0E0;
+    margin-top: 20px;
+    font-size: 32px;
+    padding: 20px;
 }
 
 // .shopping-cart-content, .checkout-content {
