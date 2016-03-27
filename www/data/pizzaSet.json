@@ -4,55 +4,50 @@
             "id": 0,
             "name": "大盒普通批 + 4款美食",
             "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B5919.png",
-            "price": 275
+            "price": 275,
+            "info": "指定鬆厚批(普通批) X 1 <br/>雞翼及蒜蓉包 <br/>香蒜芝士白汁蜆肉焗薯蓉 <br/>肉丸配拿破崙醬汁"
         },
         {
             "id": 1,
-            "name": "2-3人普通批套餐",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4963.png",
-            "price": 170
+            "name": "大盒普通批 + 精選海鮮美食",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6936.png",
+            "price": 275,
+            "info": "指定鬆厚批(普通批) X 1<br/> 小食拼盤及蒜蓉包 <br/>海鮮寬條麵"
         },
         {
             "id": 2,
-            "name": "大批孖寶優惠",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4490.png",
-            "price": 314
+            "name": "2-3人普通批套餐",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4963.png",
+            "price": 170,
+            "info": "指定鬆厚批(普通批) X 1 <br/>指定飯 / 意粉 / 小食 X 1 <br/>百事可樂罐裝 / 蘑菇忌廉雞湯 / 田園沙律 X 2"
         },
         {
             "id": 4,
-            "name": "大盒普通批 + 4款美食",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B5919.png",
-            "price": 275
+            "name": "2-3人大批套餐",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4965.png",
+            "price": 200,
+            "info": "指定鬆厚批(大批) X 1 <br/>指定飯 / 意粉 / 小食 X 1<br/>百事可樂罐裝 / 蘑菇忌廉雞湯 / 田園沙律 X 2"
         },
         {
             "id": 5,
-            "name": "2-3人普通批套餐",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4963.png",
-            "price": 170
+            "name": "3-4人大批套餐",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6100.png",
+            "price": 272,
+            "info": "指定鬆厚批(大批) X 1 <br/>指定飯 / 意粉 X 2 + 指定小食 X 1 <br/>百事可樂1.25L x 1 / 蘑菇忌廉雞湯 / 田園沙律 X 4"
         },
         {
             "id": 6,
-            "name": "大批孖寶優惠",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4490.png",
-            "price": 314
+            "name": "4-5人大批套餐",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4969.png",
+            "price": 314,
+            "info": "指定鬆厚批(大批) X 1 <br/>指定飯 / 意粉 X 3 + 指定小食 X 1 <br/>百事可樂1.25L x 1 / 蘑菇忌廉雞湯 / 田園沙律 X 4"
         },
         {
             "id": 7,
-            "name": "大盒普通批 + 4款美食",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B5919.png",
-            "price": 275
-        },
-        {
-            "id": 8,
-            "name": "2-3人普通批套餐",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4963.png",
-            "price": 170
-        },
-        {
-            "id": 9,
-            "name": "大批孖寶優惠",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4490.png",
-            "price": 314
+            "name": "6-8人大批套餐",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4967.png",
+            "price": 450,
+            "info": "指定鬆厚批(大批) X 2 <br/>指定意粉 / 飯 X 2 + 指定小食 X 2<br/>百事可樂1.25L x 2 / 蘑菇忌廉雞湯 / 田園沙律 X 6"
         }
    ]
 }
