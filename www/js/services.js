@@ -44,12 +44,21 @@ angular.module('vi-pizza.services', [])
     var foodTypeIndex = 0;
     var validateIndex = 0;
     var deals = [];
+
+    /**
+     * Since we have no sync method for $http.get(), I have to use this hack for getting all deals
+     * It will send a callback that notify it is finish
+     * This function used to collect the deals by each iteration
+     * @param Deals[] data
+     */
     var iterationCallback = function (data) {
       deals = deals.concat(data.deals);
       if (++validateIndex == foodTypes.length) {
         callback({"deals": deals});
       }
+      return false;
     }
+    
     for (foodType in foodTypes) {
       baseFactory(foodTypes[foodTypeIndex++], $http).all(iterationCallback);    
     }

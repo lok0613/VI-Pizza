@@ -133,7 +133,6 @@ angular.module('vi-pizza.controllers', [])
    * Confirm and put data to rootScope
    */
   $scope.confirm = function() {
-    console.log($scope.userForm)
     $rootScope.userForm = $scope.userForm;
     $state.go('confirm');
   };
@@ -143,7 +142,6 @@ angular.module('vi-pizza.controllers', [])
 .controller('ConfirmCtrl', function($scope, $rootScope, $state) {
   $scope.deals = $rootScope.cartDeals;
   $scope.userForm = $rootScope.userForm;
-  console.log($scope.userForm);
 
   /**
    * Forcing all deals have to visible in checkout
