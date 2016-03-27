@@ -29,10 +29,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     max-width: 27.5%;
 }
 
-.col-27:nth-child(2) {
-
-}
-
 .vi-qty {
     float: right;
     span {
@@ -42,10 +38,17 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     }
 }
 
+.vi-remove-deal {
+    float: left;
+    color: $assertive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .deal-list {
     padding-top: 62px;
     padding-bottom: 60px;
-    .row, .col-100 {
+    .col.col-100 {
         padding: 0;
     }
     .show-desc {
@@ -75,7 +78,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
         border-radius: 5px;
     }
     a.button.active span {
-        // border-bottom: 2px solid #000;
         background-color: $positive;
         color: #fff;
     }
@@ -129,6 +131,13 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     }
     textarea {
         height: 80px;
+    }
+    .input-label {
+        color: grey;
+        font-size: 13px;
+    }
+    .list-inset {
+        padding-bottom: 60px;
     }
 }
 

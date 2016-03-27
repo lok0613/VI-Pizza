@@ -1,0 +1,42 @@
+<ion-view>
+  <ion-content class="checkout-content">
+    <h1>Thank You!</h1>
+    <h1>Your order has been done.</h1>
+    <div class="grey-content">
+      <table>
+        <thead>
+          <tr class="row">
+            <th class="col col-50">Product</th>
+            <th class="col col-25">Qty (pcs)</th>
+            <th class="col col-25">Total $</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row" ng-repeat="deal in deals">
+            <td class="col col-50">{{deal.name}}</td>
+            <td class="col col-25">{{deal.qty}}</td>
+            <td class="col col-25">{{deal.qty * deal.price}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <vi-summary></vi-summary>
+
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Address:</span><br/>
+        <span>{{userForm.address}}</span>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Name:</span><br/>
+        <span>{{userForm.name}}</span>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Phone:</span><br/>
+        <span>{{userForm.phone}}</span>
+      </label>
+    </div>
+  </ion-content>
+</ion-view>
+

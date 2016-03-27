@@ -9744,10 +9744,16 @@ a.button {
     color: grey;
     display: inline-block; }
 
+.vi-remove-deal {
+  float: left;
+  color: #ef473a;
+  font-weight: bold;
+  font-size: 20px; }
+
 .deal-list {
   padding-top: 62px;
   padding-bottom: 60px; }
-  .deal-list .row, .deal-list .col-100 {
+  .deal-list .col.col-100 {
     padding: 0; }
   .deal-list .show-desc {
     text-align: right;
@@ -9808,6 +9814,13 @@ a.button {
 
 .checkout-content textarea {
   height: 80px; }
+
+.checkout-content .input-label {
+  color: grey;
+  font-size: 13px; }
+
+.checkout-content .list-inset {
+  padding-bottom: 60px; }
 
 .vi-total-amount {
   float: right;

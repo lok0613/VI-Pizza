@@ -122,18 +122,18 @@ angular.module('vi-pizza.controllers', [])
   };
 
   /**
-   * Total amount of deals
-   * @use $rootScope.totalAmount(Deal[])
-   * @return int
+   * Checkout deals
+   * @use $scope.getCartDeals()
    */
-  $scope.total = function() {
-    return $rootScope.totalAmount($scope.deals);
+  $scope.checkout = function() {
+    $state.go('checkout');
   };
+
 })
 
 .controller('CheckoutCtrl', function($scope, $rootScope, $state, $ionicHistory) {
   $scope.deals = $rootScope.cartDeals;
-  console.log($scope.deals)
+  $scope.userForm = {};
 
   /**
    * Forcing all deals have to visible in checkout
@@ -145,14 +145,29 @@ angular.module('vi-pizza.controllers', [])
   };
 
   /**
-   * Total amount of deals
-   * @use $rootScope.totalAmount(Deal[])
-   * @return int
+   * Confirm and put data to rootScope
    */
-  $scope.total = function() {
-    return $rootScope.totalAmount($scope.deals);
+  $scope.confirm = function() {
+    console.log($scope.userForm)
+    $rootScope.userForm = $scope.userForm;
+    $state.go('confirm');
   };
 
+})
+
+.controller('ConfirmCtrl', function($scope, $rootScope, $state) {
+  $scope.deals = $rootScope.cartDeals;
+  $scope.userForm = $rootScope.userForm;
+  console.log($scope.userForm);
+
+  /**
+   * Forcing all deals have to visible in checkout
+   * @param Deal deal
+   * @param Boolean
+   */
+  $scope.visible = function(deal) {
+    return true;
+  };
 })
 
 ;

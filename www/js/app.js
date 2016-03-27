@@ -25,21 +25,6 @@ angular.module('vi-pizza', ['ionic', 'vi-pizza.controllers', 'vi-pizza.services'
   });
 })
 
-.run(function($rootScope) {
-  /**
-   * Calculate total amount of deals
-   * @param Deal[] deals
-   * @return int
-   */
-  $rootScope.totalAmount = function(deals) {
-    var amount = 0;
-    for (var t=0; t<deals.length; t++) {
-      amount += deals[t].qty * deals[t].price;
-    }
-    return amount;
-  };
-})
-
 .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
@@ -74,6 +59,16 @@ angular.module('vi-pizza', ['ionic', 'vi-pizza.controllers', 'vi-pizza.services'
       'viewContent': {
         templateUrl: 'templates/checkout.html',
         controller: 'CheckoutCtrl'
+      }
+    }
+  })
+
+  .state('confirm', {
+    url: '/confirm',
+    views: {
+      'viewContent': {
+        templateUrl: 'templates/confirm.html',
+        controller: 'ConfirmCtrl'
       }
     }
   });
