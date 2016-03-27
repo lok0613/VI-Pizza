@@ -4,55 +4,57 @@
             "id": 0,
             "name": "百事可樂 -罐裝",
             "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3761.png",
-            "price": 8
+            "price": 8,
+            "info": "罐裝 (330毫升)"
         },
         {
             "id": 1,
             "name": "七喜 -罐裝",
             "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3763.png",
-            "price": 8
+            "price": 8,
+            "info": "罐裝 (330毫升)"
         },
         {
             "id": 2,
             "name": "嘉士伯 -罐裝",
             "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3770.png",
-            "price": 25
+            "price": 25,
+            "info": "罐裝 (330毫升)"
         },
         {
             "id": 3,
-            "name": "百事可樂 -罐裝",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3761.png",
-            "price": 8
+            "name": "道地(蜂蜜)綠茶 -罐裝",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B5920.png",
+            "price": 14,
+            "info": "罐裝 (330毫升)"
         },
         {
             "id": 4,
-            "name": "七喜 -罐裝",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3763.png",
-            "price": 8
+            "name": "蘑菇忌廉雞湯",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3736.png",
+            "price": 26,
+            "info": "鮮嫩雞肉加入精選蘑菇，口感美味豐富"
         },
         {
             "id": 5,
-            "name": "嘉士伯 -罐裝",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3770.png",
-            "price": 25
+            "name": "輕怡百事 -罐裝",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3762.png",
+            "price": 8,
+            "info": "罐裝 (330毫升)"
         },
         {
             "id": 6,
-            "name": "百事可樂 -罐裝",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3761.png",
-            "price": 8
+            "name": "百事可樂 -樽裝(1.5公升)",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B7268.png",
+            "price": 25,
+            "info": "樽裝 (1.5公升)"
         },
         {
             "id": 7,
-            "name": "七喜 -罐裝",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3763.png",
-            "price": 8
-        },
-        {
-            "id": 8,
-            "name": "嘉士伯 -罐裝",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3770.png",
-            "price": 25
+            "name": "七喜 -樽裝(1.5公升)",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B7395.png",
+            "price": 8,
+            "info": "樽裝 (1.5公升)"
         }
    ]
 }
