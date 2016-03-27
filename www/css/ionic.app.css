@@ -9791,9 +9791,12 @@ a.button {
     color: #FFF;
     text-align: center; }
   .grey-content table {
+    margin-top: 40px;
     width: 100%; }
     .grey-content table th, .grey-content table td {
       text-align: center; }
+    .grey-content table thead {
+      border-bottom: 1px solid #000; }
 
 .shopping-cart-content .vi-qty span {
   display: none; }

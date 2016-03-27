@@ -97,9 +97,13 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
         text-align: center;
     }
     table {
+        margin-top: 40px;
         width: 100%;
         th, td {
             text-align: center;
+        }
+        thead {
+            border-bottom: 1px solid #000;
         }
     }
 }
