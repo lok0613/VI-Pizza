@@ -4,55 +4,64 @@
             "id": 0,
             "name": "吞拿魚蕃茄沙律 (輕量裝)",
             "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3738.png",
-            "price": 32
+            "price": 32,
+            "info": "意式沙律配上嫩滑吞拿魚，滋味又健康"
         },
         {
             "id": 1,
             "name": "酥脆雞棒拼脆薯格",
             "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6900.png",
-            "price": 62
+            "price": 62,
+            "info": "精選嫩滑多汁雞柳炸至金黃酥脆，外脆內嫩，伴以脆薯格享用"
         },
         {
             "id": 2,
             "name": "辣味雞翼 (8件)",
             "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3752.png",
-            "price": 63
+            "price": 63,
+            "info": "嚴選雞中翼精心烤烘，件件金黃，配以辣味醬汁，鮮嫩入味"
         },
         {
             "id": 3,
-            "name": "吞拿魚蕃茄沙律 (輕量裝)",
+            "name": "俄羅斯沙律 (輕量裝)",
             "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3738.png",
-            "price": 32
+            "price": 38,
+            "info": "大蝦、黑橄欖及羅馬生菜清新配料加上薯仔沙律"
         },
         {
             "id": 4,
-            "name": "酥脆雞棒拼脆薯格",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6900.png",
-            "price": 62
+            "name": "輕怡沙律 (輕量裝)",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3737.png",
+            "price": 31,
+            "info": "清新材料配以千島醬，簡單健康"
         },
         {
             "id": 5,
-            "name": "辣味雞翼 (8件)",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3752.png",
-            "price": 63
+            "name": "原味雞翼 (8件)",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3751.png",
+            "price": 63,
+            "info": "嚴選雞中翼精心烤烘，件件金黃，配以原味醬汁，鮮嫩入味"
         },
         {
             "id": 6,
-            "name": "吞拿魚蕃茄沙律 (輕量裝)",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3738.png",
-            "price": 32
+            "name": "蒜蓉包",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3741.png",
+            "price": 36,
+            "info": "新鮮麵包塗上熱騰騰的蒜蓉牛油烘製，香脆可口"
         },
         {
             "id": 7,
-            "name": "酥脆雞棒拼脆薯格",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6900.png",
-            "price": 62
+            "name": "肉丸配拿破崙醬汁",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B5612.png",
+            "price": 64,
+            "info": "惹味多汁肉丸配上香濃拿玻里醬汁，滋味無窮"
         },
         {
             "id": 8,
-            "name": "辣味雞翼 (8件)",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B3752.png",
-            "price": 63
+            "name": "原味雞翼拼意式迷你腸",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B5107.png",
+            "price": 62,
+            "info": "兩種經典滋味，一次共享"
         }
    ]
 }
