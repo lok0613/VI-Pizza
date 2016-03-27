@@ -1,7 +1,6 @@
 <ion-view>
   <ion-content class="checkout-content">
-    <h1>Thank You!</h1>
-    <h1>Your order has been done.</h1>
+    <h1>Your Order</h1>
     <div class="grey-content">
       <table>
         <thead>
@@ -23,20 +22,21 @@
 
     <vi-summary></vi-summary>
 
-    <div class="list">
-      <label class="item item-input item-stacked-label">
-        <span class="input-label">Address:</span><br/>
-        <span>{{userForm.address}}</span>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <textarea ng-model="userForm.address" id="address" placeholder="Address"></textarea>
       </label>
-      <label class="item item-input item-stacked-label">
-        <span class="input-label">Name:</span><br/>
-        <span>{{userForm.name}}</span>
+      <label class="item item-input">
+        <input type="text" ng-model="userForm.name" id="name" placeholder="Name">
       </label>
-      <label class="item item-input item-stacked-label">
-        <span class="input-label">Phone:</span><br/>
-        <span>{{userForm.phone}}</span>
+      <label class="item item-input">
+        <input type="number" ng-model="userForm.phone" id="phone" placeholder="Phone No.">
       </label>
     </div>
+
+    <button class="button button-positive vi-confirm-btn" ng-click="confirm()">
+      Confirm
+    </button>
   </ion-content>
 </ion-view>
 

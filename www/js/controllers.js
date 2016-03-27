@@ -61,21 +61,12 @@ angular.module('vi-pizza.controllers', [])
   };
 
   /**
-   * Goto shopping cart
-   * @use $scope.getCartDeals()
+   * Confirm and put data to rootScope
    */
-  $scope.shoppingCart = function() {
+  $scope.confirm = function() {
     $scope.getCartDeals();
-    $state.go('shoppingCart');
-  };
-
-  /**
-   * Checkout deals
-   * @use $scope.getCartDeals()
-   */
-  $scope.checkout = function() {
-    $scope.getCartDeals();
-    $state.go('checkout');
+    $rootScope.userForm = $scope.userForm;
+    $state.go('confirm');
   };
 
   /**
@@ -150,6 +141,13 @@ angular.module('vi-pizza.controllers', [])
    */
   $scope.visible = function(deal) {
     return true;
+  };
+
+  /**
+   * Confirm and put data to rootScope
+   */
+  $scope.confirm = function() {
+    $state.go('thankyou');
   };
 })
 

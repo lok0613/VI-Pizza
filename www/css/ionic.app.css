@@ -9737,12 +9737,20 @@ a.button {
 .col-27 {
   max-width: 27.5%; }
 
+.padding-3x {
+  padding: 30px; }
+
 .vi-qty {
   float: right; }
   .vi-qty span {
     font-size: 19px;
     color: grey;
     display: inline-block; }
+
+.vi-confirm-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px; }
 
 .vi-remove-deal {
   float: left;
@@ -9756,8 +9764,7 @@ a.button {
   font-size: 15px; }
 
 .deal-list {
-  padding-top: 62px;
-  padding-bottom: 60px; }
+  padding-top: 62px; }
   .deal-list .item {
     padding-bottom: 0; }
 
@@ -9817,9 +9824,6 @@ a.button {
 .checkout-content .input-label {
   color: grey;
   font-size: 13px; }
-
-.checkout-content .list-inset {
-  padding-bottom: 60px; }
 
 .vi-total-amount {
   float: right;

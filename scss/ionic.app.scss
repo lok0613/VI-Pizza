@@ -29,6 +29,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     max-width: 27.5%;
 }
 
+.padding-3x {
+    padding: 30px;
+}
+
 .vi-qty {
     float: right;
     span {
@@ -36,6 +40,12 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
         color: grey;
         display: inline-block;
     }
+}
+
+.vi-confirm-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .vi-remove-deal {
@@ -53,7 +63,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 .deal-list {
     padding-top: 62px;
-    padding-bottom: 60px;
     .item {
         padding-bottom: 0;
     }
@@ -133,9 +142,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     .input-label {
         color: grey;
         font-size: 13px;
-    }
-    .list-inset {
-        padding-bottom: 60px;
     }
 }
 

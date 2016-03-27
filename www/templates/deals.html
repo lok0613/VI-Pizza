@@ -7,29 +7,30 @@
       <a class="button col col-15" ng-click="show('drinks')" ng-class="{'active': active('drinks')}"><span>Drinks</span></a>
   </div>
   <ion-content>
-  
-    <div class="list padding deal-list">
-        <div class="item item-thumbnail-left" ng-repeat="deal in deals" ng-show="visible(deal)">
-        <img ng-src="{{deal.image}}" vi-light-box ng-click="showLightBox()"/>
-          <h2>{{deal.name}}</h2>
-          <div class="row">
-            <div class="col col-50">
-              <h1>${{deal.price}}</h1>
-            </div>
-            <div class="col col-50">
-              <vi-qty/>
-            </div>
-          </div>
-          <vi-more-info></vi-more-info>
-        </div>
+    <div class="grey-content">
+      <h1>Shopping Cart</h1>
+      <table>
+        <thead>
+          <tr class="row">
+            <th class="col col-50">NAme</th>
+            <th class="col col-25">Price</th>
+            <th class="col col-25">Qty</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row" ng-repeat="deal in deals" ng-show="visible(deal)">
+            <td class="col col-50">{{deal.name}}</td>
+            <td class="col col-25">${{deal.price}}</td>
+            <td class="col col-25"><vi-qty/></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+
+    <button class="button button-positive vi-confirm-btn" ng-click="confirm()">
+      Confirm
+    </button>
+
   </ion-content>
 </ion-view>
-
-<div class="bar bar-footer bar-balanced">
-  <div class="button-bar">
-    <a class="button button-balanced" ng-click="shoppingCart()">Shopping Cart</a>
-    <a class="button button-balanced" ng-click="checkout()">Check Out</a>
-  </div>
-</div>
 

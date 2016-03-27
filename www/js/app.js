@@ -71,7 +71,18 @@ angular.module('vi-pizza', ['ionic', 'vi-pizza.controllers', 'vi-pizza.services'
         controller: 'ConfirmCtrl'
       }
     }
+  })
+
+  .state('thankyou', {
+    url: '/thankyou',
+    views: {
+      'viewContent': {
+        templateUrl: 'templates/thankyou.html'
+      }
+    }
   });
+;
+
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/menu');
