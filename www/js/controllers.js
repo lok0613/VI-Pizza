@@ -1,6 +1,6 @@
 angular.module('vi-pizza.controllers', [])
 
-.controller('MenuCtrl', function($scope, FoodFactory, $ionicPopup, $state, $rootScope) {
+.controller('MenuCtrl', function($scope, FoodFactory, $state, $rootScope) {
   /**
    * State the current food type
    * @var string
@@ -46,21 +46,6 @@ angular.module('vi-pizza.controllers', [])
   $scope.visible = function(deal) {
     return deal.foodType == $scope.activeFoodType;
   }
-
-  /**
-   * Popup a lightbox for deal
-   * @todo move to traits or something like that
-   * @param string src
-   */
-  $scope.lightbox = function(src) {
-    var myPopup = $ionicPopup.show({
-      template: '<img style="width: 100%" src="'+src+'"/>',
-      scope: $scope,
-      buttons: [
-        { text: 'Cancel', type: 'button-positive' }
-      ]
-    });
-  };
 
   /**
    * Put deals into cart

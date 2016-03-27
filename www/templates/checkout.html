@@ -3,7 +3,7 @@
     <h1>Check Out</h1>
     <div class="list padding deal-list">
         <div class="item item-thumbnail-left" ng-repeat="deal in deals" ng-show="visible(deal)">
-          <img ng-src="{{deal.image}}" ng-click="lightbox(deal.image)">
+          <img ng-src="{{deal.image}}" vi-light-box ng-click="showLightBox()"/>
           <h2>{{deal.name}}</h2>
           <div class="row">
             <div class="col col-33">
@@ -16,6 +16,7 @@
               ${{deal.qty * deal.price}}
             </div>
           </div>
+          <vi-more-info></vi-more-info>
         </div>
     </div>
 

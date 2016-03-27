@@ -51,7 +51,7 @@
         "id": 8,
         "name": "海陸精選 (千島醬)",
         "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/18.png",
-         "price": 129,
+        "price": 129,
         "info": "牛肉粒、蟹柳、粟米、蘑菇、辣肉腸、千島醬"
    }]
 }
