@@ -1,29 +1,27 @@
-<ion-view>
+<ion-view><!-- 
   <div class="button-bar vi-menu row">
       <a class="button col col-15" ng-click="show('pizzaSet')" ng-class="{'active': active('pizzaSet')}"><span>Set</span></a>
       <a class="button col col-15" ng-click="show('pizza')" ng-class="{'active': active('pizza')}"><span>Pizza</span></a>
       <a class="button col col-27" ng-click="show('mainDish')" ng-class="{'active': active('mainDish')}"><span>Main Dish</span> </a>
       <a class="button col col-27" ng-click="show('sideDish')" ng-class="{'active': active('sideDish')}"><span>Side Dish</span></a>
       <a class="button col col-15" ng-click="show('drinks')" ng-class="{'active': active('drinks')}"><span>Drinks</span></a>
-  </div>
+  </div> -->
   <ion-content>
     <div class="grey-content">
-      <table>
-        <thead>
-          <tr class="row">
-            <th class="col col-50">Name</th>
-            <th class="col col-25">Price</th>
-            <th class="col col-25">Qty</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="row" ng-repeat="deal in deals" ng-show="visible(deal)">
-            <td class="col col-50">{{deal.name}}</td>
-            <td class="col col-25">${{deal.price}}</td>
-            <td class="col col-25"><vi-qty/></td>
-          </tr>
-        </tbody>
-      </table>
+      <span class="food-type">Set</span>
+      <div ng-include="'templates/deal-table.html'" ng-repeat="activeFoodType in ['pizzaSet']"></div>
+
+      <span class="food-type">Pizza</span>
+      <div ng-include="'templates/deal-table.html'" ng-repeat="activeFoodType in ['pizza']"></div>
+
+      <span class="food-type">Main Dish</span>
+      <div ng-include="'templates/deal-table.html'" ng-repeat="activeFoodType in ['mainDish']"></div>
+
+      <span class="food-type">Side Dish</span>
+      <div ng-include="'templates/deal-table.html'" ng-repeat="activeFoodType in ['sideDish']"></div>
+
+      <span class="food-type">Drinks</span>
+      <div ng-include="'templates/deal-table.html'" ng-repeat="activeFoodType in ['drinks']"></div>
     </div>
 
     <button class="button button-positive vi-confirm-btn" ng-click="confirm()">

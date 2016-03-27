@@ -83,7 +83,7 @@ angular.module('vi-pizza.controllers', [])
    */
   $scope.getAllDeals();
   $scope.show('pizza');
-  $scope.fixCss();
+  // $scope.fixCss();
 })
 
 .controller('ShoppingCartCtrl', function($scope, $rootScope, $state) {

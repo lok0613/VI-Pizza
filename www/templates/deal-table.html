@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr class="row">
+      <th class="col col-50">Name</th>
+      <th class="col col-25">Price</th>
+      <th class="col col-25">Qty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="row" ng-repeat="deal in deals" ng-show="activeFoodType == deal.foodType">
+      <td class="col col-50">{{deal.name}}</td>
+      <td class="col col-25">${{deal.price}}</td>
+      <td class="col col-25"><vi-qty/></td>
+    </tr>
+  </tbody>
+</table>

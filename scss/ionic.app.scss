@@ -91,20 +91,24 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 .grey-content {
-    background-color: #E0E0E0;
     h1 {
         color: #FFF;
         text-align: center;
     }
     table {
-        margin-top: 40px;
         width: 100%;
         th, td {
             text-align: center;
         }
         thead {
-            border-bottom: 1px solid #000;
+            border-top: 1px solid #000;
         }
+        th, tr {
+            padding: 0;
+        }
+    }
+    .food-type {
+        font-size: 20px;
     }
 }
 
