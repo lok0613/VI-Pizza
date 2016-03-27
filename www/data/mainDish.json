@@ -4,55 +4,64 @@
             "id": 0,
             "name": "香蒜肉絲意粉",
             "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4356.png",
-            "price": 59
+            "price": 59,
+            "info": "經典之作，濃郁的蒜香配火腿、五香肉粒及爽口意粉"
         },
         {
             "id": 1,
             "name": "葡汁雞焗飯",
             "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4370.png",
-            "price": 63
+            "price": 63,
+            "info": "鮮嫩雞肉配上惹味葡汁，香滑惹味"
         },
         {
             "id": 2,
             "name": "鮮蝦珍珠帶子焗飯",
             "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6689.png",
-            "price": 69
+            "price": 69,
+            "info": "鮮蝦、珍珠帶子飯配香濃蕃茄醬烤焗，味濃而不膩"
         },
         {
             "id": 3,
-            "name": "香蒜肉絲意粉",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4356.png",
-            "price": 59
+            "name": "咖喱雞肉飯",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6157.png",
+            "price": 63,
+            "info": "鮮嫩雞肉加咖喱汁，香濃滋味膩"
         },
         {
             "id": 4,
-            "name": "葡汁雞焗飯",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4370.png",
-            "price": 63
+            "name": "芝士咖喱海鮮飯",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B5703.png",
+            "price": 69,
+            "info": "精選海鮮加咖喱汁，味濃而不膩，口感豐富，令人鍾愛"
         },
         {
             "id": 5,
-            "name": "鮮蝦珍珠帶子焗飯",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6689.png",
-            "price": 69
+            "name": "意式雞皇飯",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4371.png",
+            "price": 63,
+            "info": "沾滿忌廉濃汁的意粉配上嫩雞塊，散發香濃滋味"
         },
         {
             "id": 6,
-            "name": "香蒜肉絲意粉",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4356.png",
-            "price": 59
+            "name": "芝士海鮮焗飯",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6899.png",
+            "price": 79,
+            "info": "精選海鮮配法式車打芝士白汁烘焗而成"
         },
         {
             "id": 7,
-            "name": "葡汁雞焗飯",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B4370.png",
-            "price": 63
+            "name": "大蝦闊條麵配龍蝦汁",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B5698.png",
+            "price": 79,
+            "info": "闊條麵配以大蝦烤焗，味道香濃"
         },
         {
             "id": 8,
-            "name": "鮮蝦珍珠帶子焗飯",
-            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6689.png",
-            "price": 69
+            "name": "咖喱雞肉意粉",
+            "image": "https://order1.pizzahut.com.hk/menu/v000001/hk/tc/images/B6374.png",
+            "price": 63,
+            "info": "鮮嫩雞肉加咖喱汁，香濃滋味"
         }
    ]
 }
